@@ -7,7 +7,7 @@ void threadCallback(int * x)
 }
 int main()
 {
-    int x = 9;
+    int x = 2;
     std::cout<<"In Main Thread : Before Thread Start x = "<<x<<std::endl;
     std::thread threadObj(threadCallback,(&x));
     threadObj.join();
